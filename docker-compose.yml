@@ -15,3 +15,6 @@ services:
     volumes:
       - /opt/cs/server.cfg:/home/steam/cstrike/cstrike/server.cfg
       - /opt/cs/mapcycle.txt:/home/steam/cstrike/cstrike/mapcycle.txt
+    networks:
+      default:
+        driver: bridge
