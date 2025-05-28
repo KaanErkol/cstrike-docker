@@ -10,8 +10,8 @@ services:
       - MAXPLAYERS=16
       - SV_LAN=0
     ports:
-      - 27015:27015/udp
-      - 27015:27015
+      - "27015:27015/tcp"
+      - "27015:27015/udp"
     volumes:
       - /opt/cs/server.cfg:/home/steam/cstrike/cstrike/server.cfg
       - /opt/cs/mapcycle.txt:/home/steam/cstrike/cstrike/mapcycle.txt
