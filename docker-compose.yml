@@ -13,5 +13,5 @@ services:
       - "27015:27015/udp"
       - "27015:27015"
     volumes:
-      - ./cs-config/server.cfg:/home/steam/cstrike/cstrike/server.cfg
-      - ./cs-config/mapcycle.txt:/home/steam/cstrike/cstrike/mapcycle.txt
+      - /opt/cs/server.cfg:/home/steam/cstrike/cstrike/server.cfg
+      - /opt/cs/mapcycle.txt:/home/steam/cstrike/cstrike/mapcycle.txt
