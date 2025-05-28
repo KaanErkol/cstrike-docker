@@ -2,7 +2,7 @@ version: '3'
 services:
   cstrike:
     container_name: cstrike-server
-    image: cajuclc/cstrike-docker:latest
+    image: .
     restart: always
     environment:
       - PORT=27015
